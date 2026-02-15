@@ -66,22 +66,11 @@
 			<div class="flex flex-col justify-end w-full items-center pb-10 text-center">
 				<div class="text-5xl lg:text-7xl font-secondary">
 					<Marquee
-						duration={5000}
-						words={[
-							$i18n.t('Explore the cosmos'),
-							$i18n.t('Unlock mysteries'),
-							$i18n.t('Chart new frontiers'),
-							$i18n.t('Dive into knowledge'),
-							$i18n.t('Discover wonders'),
-							$i18n.t('Ignite curiosity'),
-							$i18n.t('Forge new paths'),
-							$i18n.t('Unravel secrets'),
-							$i18n.t('Pioneer insights'),
-							$i18n.t('Embark on adventures')
-						]}
+						duration={4000}
+						words={['Better way!', 'alef.ba way!']}
 					/>
 
-					<div class="mt-0.5">{$i18n.t(`wherever you are`)}</div>
+					<div class="mt-0.5 text-2xl lg:text-3xl">Better way!; alef.ba way!</div>
 				</div>
 
 				<div class="flex justify-center mt-8">

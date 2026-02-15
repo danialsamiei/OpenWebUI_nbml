@@ -575,6 +575,12 @@
 									{@html DOMPurify.sanitize(marked($config?.metadata?.login_footer))}
 								</div>
 							</div>
+						{:else}
+							<div class="max-w-3xl mx-auto">
+								<div class="mt-4 text-[0.7rem] text-gray-500 dark:text-gray-400">
+									Deployed by <a href="https://alef.ba" target="_blank" rel="noopener noreferrer" class="underline">alef.ba</a> for <a href="https://nbml.ir" target="_blank" rel="noopener noreferrer" class="underline">nbml.ir</a>
+								</div>
+							</div>
 						{/if}
 					</div>
 				{/if}

@@ -895,11 +895,18 @@
 
 {#if loaded}
 	{#if $isApp}
-		<div class="flex flex-row h-screen">
-			<AppSidebar />
+		<div class="flex flex-col h-screen">
+			<div class="flex flex-row flex-1 min-h-0">
+				<AppSidebar />
 
-			<div class="w-full flex-1 max-w-[calc(100%-4.5rem)]">
-				<slot />
+				<div class="w-full flex-1 max-w-[calc(100%-4.5rem)] flex flex-col min-h-0">
+					<div class="flex-1 min-h-0 overflow-auto">
+						<slot />
+					</div>
+					<footer class="flex-shrink-0 py-1.5 px-3 text-center text-[0.65rem] text-gray-500 dark:text-gray-400 bg-transparent border-t border-gray-200/50 dark:border-gray-700/50">
+						Deployed by <a href="https://alef.ba" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-700 dark:hover:text-gray-300">alef.ba</a> for <a href="https://nbml.ir" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-700 dark:hover:text-gray-300">nbml.ir</a>
+					</footer>
+				</div>
 			</div>
 		</div>
 	{:else}
